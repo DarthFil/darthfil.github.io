@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/site.css">
+
+    <title>Felipe dos Santos Silva</title>
+</head>
+
+<body>
+    <!--load-->
+    <div id="bg_load" class="d-flex justify-content-center">
+        <div class="spinner-grow " style="width: 6rem; height: 6rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!--load-->
+
+    <div id="content" style="display: none;">
+        <!--<header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Desativado</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>-->
+        <main>
+            <section class="jumbotron jumbotron-fluid">
+                <div class="container text-center">
+                    <h1 class="display-4">Felipe dos Santos Silva</h1>
+                    <p class="lead">Developer .Net</p>
+                </div>
+                <div class="text-center">
+                    <a href="#">
+                        <span class="fab fa-twitter fa-2x"></span>
+                    </a>
+        
+                    <a href="#">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+ 
+                    <a href="#">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+      
+                    <a href="#">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                
+                    <a href="#">
+                        <i class="fab fa-telegram-plane fa-2x"></i>
+                    </a>
+          
+                    <a href="#">
+                        <i class="far fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container text-center">
+                <span class="text-muted">Place sticky footer content here.</span>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/d43fdbe2fc.js" crossorigin="anonymous"></script>
+    <script>
+        $(window).on('load', function () {
+            $(".spinner-grow").fadeOut("slow");
+            setTimeout(function () {
+                $("#content").fadeIn("slow");
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
