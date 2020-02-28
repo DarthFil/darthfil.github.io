@@ -1,3 +1,9 @@
-body{
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+body {
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+    background: /* top, transparent black, faked with gradient */
+    linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* bottom, image */
+    url(../img/38838-brasilia-1920x1080-world-wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
