@@ -2,102 +2,126 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta Info -->
+    <meta charset="utf-8" />
+    <meta name="author" content="Felipe dos Santos Silva" />
+    <meta name="description" content="Particles - Personal + Agency Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Royal Preloader CSS -->
+    <link href="css/royal_preloader.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/site.css">
+    <!-- jQuery Files -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
+    <!-- Parallax File -->
+    <script type="text/javascript" src="js/parallax.min.js"></script>
+
+    <!-- Royal Preloader -->
+    <script type="text/javascript" src="js/royal_preloader.min.js"></script>
+    <script type="text/javascript">
+        Royal_Preloader.config({
+            mode: 'number',
+            showProgress: false,
+            background: '#1d1d1d'
+        });
+    </script>
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/logoiconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" title="main-css">
+
+    <!-- Alternate Stylesheets / choose what color and base you want and include the 2 files regularly AFTER style.css above -->
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/blue.css" title="blue">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/green.css" title="green">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/orange.css" title="orange">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/red.css" title="red">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/orangelight.css" title="orangelight">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/pinkish.css" title="pinkish">
+    <link rel="alternate stylesheet" type="text/css" href="css/colors/seagul.css" title="seagul">
+    <link rel="alternate stylesheet" type="text/css" href="css/base-light.css" title="base-light">
     <title>Felipe dos Santos Silva</title>
 </head>
 
-<body>
-    <!--load-->
-    <div id="bg_load" class="d-flex justify-content-center">
-        <div class="spinner-grow " style="width: 6rem; height: 6rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!--load-->
-
-    <div id="content" style="display: none;">
-        <!--<header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Desativado</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>-->
-        <main>
-            <!-- <section class="jumbotron jumbotron-fluid"> -->
-            <section style="padding: 4rem 2rem;">
-                <div class="container text-center">
-                    <h1 class="display-4" style="color: aliceblue;">Felipe dos Santos Silva</h1>
-                    <p class="lead" style="color: aliceblue;">Developer .Net</p>
-                </div>
-                <div class="text-center">
-                    <a href="#">
-                        <span class="fab fa-twitter fa-2x" style="color: aliceblue;"></span>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-instagram fa-2x" style="color: aliceblue;"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-github fa-2x" style="color: aliceblue;"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-linkedin-in fa-2x" style="color: aliceblue;"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-telegram-plane fa-2x" style="color: aliceblue;"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="far fa-envelope fa-2x" style="color: aliceblue;"></i>
+<body class="royal_preloader" data-spy="scroll" data-target=".navbar" data-offset="70">
+    <!-- Royal Preloader -->
+    <div id="royal_preloader"></div>
+    <!-- Header (brand and navigation) -->
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-main" id="home">
+        <div id="particles-js"></div>
+        <!-- /.particles div -->
+        <div class="container center-vertically-holder">
+            <div class="center-vertically">
+                <div class="col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+                    <h1 class="scaleReveal">
+                        Felipe <strong>look &amp; feel</strong>.
+                    </h1>
+                    <hr class="bottomReveal">
+                    <p class="bottomReveal">Particles is a fun and multipurpose template, with clean &amp; modern design <i>+</i>&nbsp; code.</p>
+                    <a href="#ideology" data-id="ideology" class="scroll-link">
+                        <div class="scroll-indicator rotateBottomReveal">
+                            <span class="ion-mouse"></span><br>
+                            <span class="ion-android-arrow-down arrow-scroll-indicator"></span>
+                        </div>
                     </a>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container text-center">
-                <span class="text-muted">Place sticky footer content here.</span>
+                <!-- /.column -->
             </div>
-        </footer>
+            <!-- /.vertical center -->
+        </div>
+        <!-- /.container -->
     </div>
-    <!-- JavaScript -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/d43fdbe2fc.js" crossorigin="anonymous"></script>
-    <script>
-        $(window).on('load', function() {
-            $(".spinner-grow").fadeOut("slow");
-            setTimeout(function() {
-                $("#content").fadeIn("slow");
-            }, 500);
+    <!-- Intro -->
+    <!-- Services -->
+    <!-- About -->
+    <!-- Our Count -->
+    <!-- Profile -->
+    <!-- Work -->
+    <!-- Timeline -->
+    <!-- Team -->
+    <!-- Pricing -->
+    <!-- Contact + Map -->
+    <!-- Footer -->
+
+    <!-- JS Files -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/form-validator.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript">
+        /* ---- Counter (our count) ---- */
+        $('#ourcount').one('inview', function(event, isInView) {
+            if (isInView) {
+                $('.timer').countTo({
+                    speed: 3000
+                });
+            }
         });
     </script>
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/particlesRun.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/form-validator.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <script type="text/javascript">
+        /* ---- Counter (our count) ---- */
+        $('#ourcount').one('inview', function(event, isInView) {
+            if (isInView) {
+                $('.timer').countTo({
+                    speed: 3000
+                });
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
