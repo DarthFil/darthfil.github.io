@@ -2579,3 +2579,9 @@ footer hr {
         padding: 0 30px 20px 20px;
     }
 }
+
+.social-icons {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
